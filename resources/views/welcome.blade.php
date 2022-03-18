@@ -21,7 +21,7 @@
     </head>
     <body class="antialiased" id = "dark">
         <div class = "top">
-            <h3 style = "position : fixed; top : 8px; left : 8px;">Daniel</h3>
+            <h3 style = "position : fixed; padding : 8px; background : var(--bg); color : var(--color); z-index : 100;">Daniel</h3>
             
             <div id="socials">
                 <ul>
