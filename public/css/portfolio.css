@@ -331,3 +331,9 @@ h1 {
 #services .right {
     text-align: right;
 }
+
+@media screen and (max-width: 764px) {
+    #contact form {
+        max-width: 320px;
+    }
+}
