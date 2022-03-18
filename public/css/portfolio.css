@@ -44,6 +44,7 @@ h1 {
     background: var(--bg);
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
     color: var(--color);
     padding-top: 20px;
 }
