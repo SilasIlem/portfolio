@@ -8,10 +8,11 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-icons/bootstrap-icons.css')}}">
 
         <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
-        
-        <link rel="stylesheet" href="{{ asset('css/bootstrap-icons/bootstrap-icons.css')}}">
 
         <!-- Styles -->
         <style>
@@ -20,8 +21,16 @@
 
     </head>
     <body class="antialiased" id = "dark">
+        <div id="navbar-nav">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#about"><i class = "bi bi-people"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills"><i class = "bi bi-server"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#services"><i class = "bi bi-minecart"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"><i class = "bi bi-phone"></i></a></li>
+            </ul>
+        </div>
         <div class = "top">
-            <h3 style = "position : fixed; padding : 8px; background : var(--bg); color : var(--color); z-index : 100;">Daniel</h3>
+            <h3 style = "position : fixed; font-size : 26px; height : 60px; width : 80px; padding : 8px; background : var(--bg); display : flex; color : var(--color); z-index : 100;"> <span style = "margin-right : 8px;">D</span> <span style = "padding-left : 8px; border-left : 2px solid rgb(192, 73, 247);">R</span></h3>
             
             <div id="socials">
                 <ul>
@@ -31,23 +40,19 @@
                     <li><i class = "bi bi-github"></i></li>
                 </ul>
             </div>
-            <div id="navbar-nav">
-                <ul>
-                    <li class="nav-item"><a class="nav-link" href="#about"><i class = "bi bi-people"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills"><i class = "bi bi-server"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services"><i class = "bi bi-minecart"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><i class = "bi bi-phone"></i></a></li>
-                </ul>
-            </div>
 
-            <div id="intro">
+            <div id="intro" class = "animated slideInDown">
                 <span>Hello, I'm</span> <h1>Daniel Ryan</h1>
                 <p>and this is my Portfolio</p>
             </div>
 
-            <div id = btns>
+            <div style = "margin : 16px 0px 24px; display : flex; justify-content : center;">
+                <hr style = "width : 80px; background :rgb(192, 73, 247); height : 2px; border-radius : 4px;">
+            </div>
 
-                <button id = one>Download CV</button>
+            <div id = btns class = "animated slideInDown">
+
+                <button id = one> <a href="docs/cv.txt" download>Download CV</a></button>
 
                 <button id = two>About Me</button>
     
@@ -63,21 +68,67 @@
 
    
         <div id="about">
-            <img src="images/2.jpg" alt="" id="about-right">
+
+            <div id = "about-summary">
+                <img src="images/2.jpg" alt="" id="about-img">
+                <div>
+                    <h4>SKILLS SUMMARY</h4>
+                    <ul>
+                        <li>
+                            HTML + CSS
+                        </li>
+
+                        <li>JAVASCRIPT</li>
+                        <li>PHP</li>
+                        <li>DEVOPS</li>
+                        <li>GRAPHIC DESIGN</li>
+                        <li>UI/UX DESIGN</li>
+                    </ul>
+
+                    <a href="#skills"><button>See More <i class = "bi bi-arrow-right"></i></button></a>
+                </div>
+            </div>
+
 
             <div id = 'about-left'>
-                <h1>Daniel Ryan</h1>
 
-                <p>Creative Web & App Developer</p>
+                <div id = "about-littles">
+                    <ul>
+                        <li>
+                            <i class="bi bi-lightbulb"></i>
+                            <h2>Experience</h2>
+                            <p>6+ Years in Web Dev</p>
+                        </li>
+                        <li>
+                            <i class="bi bi-gem"></i>
+                            <h2>Completed</h2>
+                            <p>27 Websites</p>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <h2>Support</h2>
+                            <p>Got questions for me? <a href="#contact"><i class = "bi bi-arrow-right-square-fill"></i></a></p>
+                        </li>
+                    </ul>
+                </div>
 
-                <hr/>
+                <div id = about-me>
+                    <p>Personal & Professional</p>
+                    <h1>BACKGROUND</h1>
+                    <h1 style = "color : var(--theme-color);">Daniel Ryan</h1>
 
-                <p>
-                    I am Daniel Ryan, Legally known as Silas Ilemobayo --- you should call me Daniel though. I live in Nigeria, work in Nigeria, and plan to do so for as long as she shall have me. I am a Software Engineer; Devops-concentric Web Designer, Mobile Application developer, Graphic Designer, Copy Writer, Science and Maths Tutor... You name 'em.
-
-                </p>
-       
-                <button>Learn More</button>
+                    <p>Creative Web & App Developer</p>
+    
+                    <hr/>
+    
+                    <p>
+                        <span style = "text-transform : uppercase; font-size : 18px;">My name is <span style = "font-size : 22px;">Daniel Ryan</span>, a Software Engineer</span>. Legally known as Silas Ilemobayo --- you should call me Daniel though. I am a professionally trained devops-concentric web and mobile developer. I am also a forex trader with over three years experience; goes without saying that cryptocurrency trading is my forte.
+    
+                    </p>
+           
+                    <button>Contact Me</button>
+                </div>
+                
 
             </div>
         </div>
@@ -105,36 +156,42 @@
         </div>
 
         <div id="works">
-            <h1>My Works</h1>
-            <ul>
-                <li>
-                    <img src="{{ asset('images/work1.png')}}" alt="">
-                    <h4>sweet Cherry</h4>
-                    <p>Vidmate</p>
-                </li>
-                
-                <li>
-                    <img src="{{ asset('images/work2.jpg')}}" alt="">
-                    <h4>sweet Cherry</h4>
-                    <p>Vidmate</p>
-                </li>
-            </ul>
+            <div>
+                <h1>My Works</h1>
+                <ul>
+                    <li>
+                        <img src="{{ asset('images/work1.png')}}" alt="">
+                        <h4>sweet Cherry</h4>
+                        <p>Vidmate</p>
+                    </li>
+                    
+                    <li>
+                        <img src="{{ asset('images/work2.jpg')}}" alt="">
+                        <h4>sweet Cherry</h4>
+                        <p>Vidmate</p>
+                    </li>
+                </ul>
+            </div>
+           
         </div>
 
         <div id="skills">
-            <h1>My Skills -- among others.</h1>
-            <ul>
-                <li>Graphic Design</li>
-                <li>Web-Design Coach</li>
-                <li>Devops Expertise</li>
-                <li>Full-stack Web Development</li>
-                <li>Code Debugging</li>
-                <li>100 wpm (words per minute) Typing Speed (Average)</li>
-                <li>UI/UX Design</li>
-                <li>Machine-Learning Expertise</li>
-                <li>Cloud Web development</li>
-                <li>Mobile Application Development</li>
-            </ul>
+            <div>
+                <h1>My Skills -- among others.</h1>
+                <ul>
+                    <li>Graphic Design</li>
+                    <li>Web-Design Coach</li>
+                    <li>Devops Expertise</li>
+                    <li>Full-stack Web Development</li>
+                    <li>Code Debugging</li>
+                    <li>100 wpm (words per minute) Typing Speed (Average)</li>
+                    <li>UI/UX Design</li>
+                    <li>Machine-Learning Expertise</li>
+                    <li>Cloud Web development</li>
+                    <li>Mobile Application Development</li>
+                </ul>
+            </div>
+         
         </div>
 
         <div id = resume>

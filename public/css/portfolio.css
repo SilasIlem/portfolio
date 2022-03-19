@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+.animated {
+    animation-duration: 4s;
+}
+
 body#light {
     font-family: "Nunito", sans-serif;
     --bg: white;
@@ -42,6 +46,7 @@ h1 {
 .top {
     min-height: 100vh;
     width: 100vw;
+    margin: 0px auto;
     background: var(--bg);
     background-attachment: fixed;
     background-size: cover;
@@ -53,7 +58,7 @@ h1 {
 #socials {
     height: 140px;
     position: absolute;
-    bottom: 5px;
+    bottom: 16px;
     left: 12px;
 }
 
@@ -69,7 +74,7 @@ h1 {
     font-size: 22px;
     text-align: center;
     letter-spacing: 4px;
-    margin-top: 220px;
+    margin-top: 100px;
     padding: 12px;
 }
 
@@ -89,14 +94,21 @@ h1 {
     display: flex;
     background: var(--bg);
     color: rgb(192, 73, 247);
+    border: 1px solid rgb(192, 73, 247);
     border-radius: 4px;
     height: 50px;
+    opacity: 0.2;
     width: 200px;
     list-style: none;
     align-items: center;
+    transition: all 0.2s linear;
     justify-content: space-around;
 }
 
+#navbar-nav ul:hover {
+    opacity: 1;
+    transition: all 0.2s linear;
+}
 .top button {
     height: 60px;
     width: 150px;
@@ -107,10 +119,20 @@ h1 {
     border-radius: 4px;
 }
 
+.top button:hover {
+    background: none;
+    box-shadow: inset 0px 0px 4px var(--bg-pop);
+    transition: all 0.2s linear;
+}
+
 #btns {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#btns a {
+    width: 150px;
 }
 
 #btns button {
@@ -119,6 +141,7 @@ h1 {
 
 #btns #one {
     background: none;
+    color: var(--color);
     border: 1px solid var(--bg-pop);
 }
 
@@ -127,29 +150,103 @@ h1 {
 }
 
 #about {
-    min-height: 400px;
-    display: flex;
+    min-height: 100vh;
     width: 100%;
     color: var(--color);
-    background: var(--bg);
-    justify-content: space-evenly;
+    padding: 0px 20%;
+    padding-top: 100px;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--bg);
+}
+
+@media screen and (max-width: 764px) {
+    #about {
+        padding: 0px;
+        padding-top: 100px;
+    }
+}
+
+#about-summary {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+#about-summary button {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background: none;
+    color: inherit;
+    margin: 12px 40px;
+    border: 1px solid var(--bg-pop);
+}
+
+#about-summary li {
+    margin: 8px 4px;
+    padding: 8px;
+    border-bottom: rgb(192, 73, 247) solid 1px;
+}
+
+#about-littles ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    width: max-content;
+}
+
+#about-littles li {
+    border: 1px solid var(--bg-pop);
+    margin: 0px 12px 8px;
+    min-width: 180px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
 }
 
 #about-left {
-    width: 100%;
+    width: 600px;
     padding: 20px;
+    display: inline;
 }
 
-#about-right {
-    width: 350px;
+#about-me {
+    padding-top: 50px;
+}
+
+#about-me button {
+    border: 1px solid var(--bg-pop);
+    border-radius: 4px;
+    padding: 8px;
+    float: right;
+}
+
+#about-img {
+    border-radius: 6px;
+    width: 180px;
     margin: 20px 2%;
-    height: 350px;
+    height: 180px;
+    float: left;
 }
 
 #skills {
-    margin: 16px;
-    margin-top: 50px;
+    padding: 16px;
+    padding-top: 50px;
+    background: var(--bg);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #skills ul {
@@ -163,7 +260,9 @@ h1 {
 }
 
 #resume {
-    margin-left: 30px;
+    padding-left: 30px;
+    background: var(--bg);
+    color: var(--color);
 }
 
 #resume > div {
@@ -208,7 +307,10 @@ h1 {
 }
 
 #services {
-    padding: 0px 40px;
+    padding: 16px 40px;
+    min-height: 100vh;
+    color: var(--color);
+    background: var(--bg);
 }
 
 #services ul {
@@ -294,7 +396,19 @@ h1 {
 }
 
 #works {
-    margin: 16px;
+    background: var(--bg);
+    padding-top: 50px;
+    color: var(--color);
+    min-height: 100vh;
+    padding-bottom: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#works > div,
+#skills > div {
+    width: 764px;
 }
 
 #works ul {
@@ -307,12 +421,13 @@ h1 {
 
 #works li {
     width: 220px;
-    height: 250px;
+    min-height: 250px;
     margin: 12px;
 }
 
 #works img {
     height: 200px;
+    border: solid 2px var(--bg-pop);
     width: 200px;
     margin: 12px;
 }
