@@ -27,47 +27,58 @@
                 <li class="nav-item"><a class="nav-link" href="#skills"><i class = "bi bi-server"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#services"><i class = "bi bi-minecart"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact"><i class = "bi bi-phone"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class = "bi bi-arrow-up"></i></a></li>
             </ul>
         </div>
         <div class = "top">
-            <h3 style = "position : fixed; font-size : 26px; height : 60px; width : 80px; padding : 8px; background : var(--bg); display : flex; color : var(--color); z-index : 100;"> <span style = "margin-right : 8px;">D</span> <span style = "padding-left : 8px; border-left : 2px solid rgb(192, 73, 247);">R</span></h3>
+            <button id = day-night><i class = "bi bi-lightbulb"></i><i class = "bi bi-moon"></i></button>
+            <h3 class = "animated slideInDown" style = "font-size : 26px; padding-left : 20px; background : var(--bg); display : flex; color : var(--color); z-index : 100;"> <span style = "margin-right : 8px;">D</span> <span style = "padding-left : 8px; border-left : 2px solid var(--theme-color);">R</span></h3>
+            <div>
             
-            <div id="socials">
-                <ul>
-                    <li><i class = "bi bi-facebook"></i></li>
-                    <li><i class = "bi bi-whatsapp"></i></li>
-                    <li><i class = "bi bi-instagram"></i></li>
-                    <li><i class = "bi bi-github"></i></li>
-                </ul>
-            </div>
-
-            <div id="intro" class = "animated slideInDown">
-                <span>Hello, I'm</span> <h1>Daniel Ryan</h1>
-                <p>and this is my Portfolio</p>
-            </div>
-
-            <div style = "margin : 16px 0px 24px; display : flex; justify-content : center;">
-                <hr style = "width : 80px; background :rgb(192, 73, 247); height : 2px; border-radius : 4px;">
-            </div>
-
-            <div id = btns class = "animated slideInDown">
-
-                <button id = one> <a href="docs/cv.txt" download>Download CV</a></button>
-
-                <button id = two>About Me</button>
+                <div id="socials">
+                    <ul>
+                        <li><a href=""><i class = "bi bi-facebook"></i></a></li>
+                        <li><a href=""><i class = "bi bi-whatsapp"></i></a></li>
+                        <li><a href=""><i class = "bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class = "bi bi-github"></i></a></li>
+                    </ul>
+                </div>
     
-            </div>
-   
-            <div style = "margin-top : 80px; width : 100%; display : flex; justify-content : center; flex-direction : column;">
+                <div id="intro" class = "animated slideInDown">
+                    <span>Hello, I'm</span> <h1>DANIEL RYAN</h1>
+                    <p>and this is my Portfolio</p>
+                </div>
+    
+                <div style = "margin : 16px 0px 24px; display : flex; justify-content : center;">
+                    <hr class = "hr" style = "width : 80px; background :var(--theme-color); height : 2px; border-radius : 4px;">
+                </div>
+    
+                <div id = btns class = "animated slideInDown">
+    
+                    <button id = one> <a href="docs/cv.txt" download>Download CV</a></button>
+    
+                    <button id = two>About Me</button>
+        
+                </div>
+       
+                <div style = "margin-top : 30px; width : 100%; display : flex; justify-content : center; flex-direction : column;">
+    
+                    <hr style = "background : orangered, width : 60px; height : 8px;">
+    
+                    <button style = "z-index : 99"><a href="#works">View my Works</a></button>
+                </div>
 
-                <hr style = "background : orangered, width : 60px; height : 8px;">
-
-                <button><a href="#works">View my Works</a></button>
+                <div style = "position : absolute; bottom : 80px; display : flex; justify-content : center; width : 100%;">
+                    <img style = "z-index : 1;" src="{{ asset('images/dan2.jpg') }}" alt="" id = developer>
+                </div>
             </div>
+
         </div>
 
    
         <div id="about">
+
+            <hr style = "height : 2px; margin : 0px 20px; width : 100%; background : var(--theme-color);">
 
             <div id = "about-summary">
                 <img src="images/2.jpg" alt="" id="about-img">
@@ -102,7 +113,7 @@
                         <li>
                             <i class="bi bi-gem"></i>
                             <h2>Completed</h2>
-                            <p>27 Websites</p>
+                            <p>27+ Websites</p>
                         </li>
                         <li>
                             <i class="bi bi-envelope"></i>
@@ -157,15 +168,37 @@
 
         <div id="works">
             <div>
-                <h1>My Works</h1>
-                <ul>
-                    <li>
+                <p>My Portfolio <span style = "font-family : fantasy;">Gangan</span></p>
+                <h1>RECENT WORKS</h1>
+                <div>
+                    <ul id = works-nav>
+                        <li id = all><button>All</button></li>
+                        <li id = web><button>Web</button></li>
+                        <li id = mobile><button>Mobile</button></li>
+                        <li id = graphic><button>Graphic</button></li>
+                    </ul>
+                </div>
+               
+                <ul id = all-works>
+                    <li class = "graphic">
                         <img src="{{ asset('images/work1.png')}}" alt="">
                         <h4>sweet Cherry</h4>
                         <p>Vidmate</p>
                     </li>
                     
-                    <li>
+                    <li class = "web">
+                        <img src="{{ asset('images/work2.jpg')}}" alt="">
+                        <h4>sweet Cherry</h4>
+                        <p>Vidmate</p>
+                    </li>
+
+                    <li class = "graphic">
+                        <img src="{{ asset('images/work1.png')}}" alt="">
+                        <h4>sweet Cherry</h4>
+                        <p>Vidmate</p>
+                    </li>
+                    
+                    <li class = "mobile">
                         <img src="{{ asset('images/work2.jpg')}}" alt="">
                         <h4>sweet Cherry</h4>
                         <p>Vidmate</p>
@@ -177,10 +210,156 @@
 
         <div id="skills">
             <div>
-                <h1>My Skills -- among others.</h1>
-                <ul>
-                    <li>Graphic Design</li>
-                    <li>Web-Design Coach</li>
+                <h5>My Experience</h5>
+                <h1>SKILLS</h1>
+                <ul id = "skill-categories">
+                    <li>
+                        <h2>Frontend Development</h2>
+                        <ul class = "skills">
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>HTML</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li> 
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>CSS</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Javascript</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>React</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Angular</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Vue</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Bootstrap</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Sass</span></p>
+                                <progress value = "50" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Less</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Tailwind CSS</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Github</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>NPM</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>React Native</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                     
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h2>Backend Development</h2>
+                        <ul class="skills">
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>PHP</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Laravel</span></p>
+                                <progress value = "98" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Code-Igniter</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Node Js</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Flask</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Django</span></p>
+                                <progress value = "90" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Spring Boot</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Golang</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Firebase</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Flutter</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>MySQL</span></p>
+                                <progress value = "90" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>MongoDB</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>ASP.net</span></p>
+                                <progress value = "60" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Postgresql</span></p>
+                                <progress value = "40" max = 100></progress>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Web-Design Coaching</h2>
+                        <ul class = skills>
+                            <li>
+                                HTML
+                            </li>
+                            <li>
+                                CSS
+                            </li>
+                            <li>
+                                javascript
+                            </li>
+                            <li>
+                                React
+                            </li>
+                            <li>
+                                Angular
+                            </li>
+                            <li>
+                                Golang
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                        </ul>
+
+                    </li>
                     <li>Devops Expertise</li>
                     <li>Full-stack Web Development</li>
                     <li>Code Debugging</li>
@@ -192,37 +371,6 @@
                 </ul>
             </div>
          
-        </div>
-
-        <div id = resume>
-            
-            <h1>My Resume</h1>
-
-            <div>
-            <h2>Education</h2>
-                <p>March 2017 - present</p>
-            </div>
-            <div>
-                <h2>Masteral in Software Engineering</h2>
-                    <p>federal University of Technology, Akure.</p>
-            </div>
-            <div>
-                <h2>Experience</h2>
-                    <p>web Developer at Help3 Organisation, Ondo City</p>
-                
-                <ul>
-                    <li>Provided front-end website development using WordPress and other editing software.</li>
-                    <li>Planned website development, converting mockups into usable web presence with HTML, Javascript, AJAX and JSON coding.</li>
-                    <li>Machine Learning Project Management</li>
-                </ul>
-            </div>
-            <div>
-                <p>Chief Techonology Officer At Mugupp.</p>
-                <ul>
-                    <li>Lead Engineer on Mugupp Scholarship project.</li>
-                    <li>Provided Assistance in Copy-writing activities.</li>
-                </ul>
-            </div>
         </div>
 
     <div id="testimonials">
@@ -293,24 +441,47 @@
     </style>
 
     <div id="contact">
-        <h1>Get in Touch</h1>
-        <h3>My Contact Details</h3>
-        Email : <a href = "mailto:danryan0246@gmail.com">danryan0246@gmail.com</a>
+        <div>
 
-        <br>
+        <div>
 
-        Phone Number : <a href = "tel:07042717677">07042717677</a>
+            <h1>Get in Touch</h1>
+            <h3>My Contact Details</h3>
+            <ul>
+                <li>
+                    <i class = "bi bi-envelope-fill"></i>
+                    <p>Email Address</p>
+                    <a href = "mailto:danryan0246@gmail.com">danryan0246@gmail.com</a>
+                </li>
+                <li>
+                    <i class = "bi bi-telephone-fill"></i>
+                    <p>Phone Number</p>
+                    <a href = "tel:+2347042717677">+2347042717677</a>
+                </li>
+                <li>
+                    <i class = "bi bi-whatsapp"></i>
+                    <p>WhatsApp</p>
+                    <p>+2348137457229</p>
+                </li>
+                <li>
+                    <i class = "bi bi-facebook"></i>
+                    <p>Facebook</p>
+                    <a href="www.facebook.com/danryan">Daniel Ryan</a>
+                </li>
+            </ul>
 
-        <br>
+            <p><span style = "font-weight : bolder;">Address</span> : No 12 Esso, Opposite AUD schools, Ondo City, Ondo State.</p>
+        </div>
 
-        Address : No 12 Esso, Opposite AUD schools, Ondo City, Ondo State.
         <form action="">
+            <p>Write me your project...</p>
             <input type="text" placeholder = "Name">
             <input type="email" placeholder = "Email">
             <input type="tel" placeholder = "Phone No">
             <textarea placeholder = "write a Message"></textarea>
             <button type="submit">Send</button>
         </form>
+    </div>
     </div>
 
     <footer style = "text-align : center;">
@@ -338,6 +509,7 @@
     		gtag('config', 'UA-23581568-13');
     	</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d48bceb485ec4e8","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+<script src = "{{ asset('js/portfolio.js') }}"></script>
 </body>
 </html>
     </body>
