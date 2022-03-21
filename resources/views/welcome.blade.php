@@ -23,7 +23,7 @@
     <body class="antialiased" id = "dark">
         <div id="navbar-nav">
             <ul>
-                <li class="nav-item"><a class="nav-link" href="#about"><i class = "bi bi-people"></i></a></li>
+                <li class="nav-item"><a class="nav-link" active href="#about"><i class = "bi bi-people"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills"><i class = "bi bi-server"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#services"><i class = "bi bi-minecart"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact"><i class = "bi bi-phone"></i></a></li>
@@ -32,7 +32,7 @@
         </div>
         <div class = "top">
             <button id = day-night><i class = "bi bi-lightbulb"></i><i class = "bi bi-moon"></i></button>
-            <h3 class = "animated slideInDown" style = "font-size : 26px; padding-left : 20px; background : var(--bg); display : flex; color : var(--color); z-index : 100;"> <span style = "margin-right : 8px;">D</span> <span style = "padding-left : 8px; border-left : 2px solid var(--theme-color);">R</span></h3>
+            <h3 id = "flag" class = "animated slideInDown"> <span id = "d">D</span> <span id = "r">R</span></h3>
             <div>
             
                 <div id="socials">
@@ -55,20 +55,20 @@
     
                 <div id = btns class = "animated slideInDown">
     
-                    <button id = one> <a href="docs/cv.txt" download>Download CV</a></button>
+                    <button id = one> <a href="docs/resume.pdf" download>Download Resume</a></button>
     
                     <button id = two>About Me</button>
         
                 </div>
        
-                <div style = "margin-top : 30px; width : 100%; display : flex; justify-content : center; flex-direction : column;">
+                <div style = "margin-top : 16px; width : 100%; display : flex; justify-content : center; flex-direction : column;">
     
                     <hr style = "background : orangered, width : 60px; height : 8px;">
     
                     <button style = "z-index : 99"><a href="#works">View my Works</a></button>
                 </div>
 
-                <div style = "position : absolute; bottom : 80px; display : flex; justify-content : center; width : 100%;">
+                <div style = "display : flex; justify-content : center; width : 100%;">
                     <img style = "z-index : 1;" src="{{ asset('images/dan2.jpg') }}" alt="" id = developer>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                     <hr/>
     
                     <p>
-                        <span style = "text-transform : uppercase; font-size : 18px;">My name is <span style = "font-size : 22px;">Daniel Ryan</span>, a Software Engineer</span>. Legally known as Silas Ilemobayo --- you should call me Daniel though. I am a professionally trained devops-concentric web and mobile developer. I am also a forex trader with over three years experience; goes without saying that cryptocurrency trading is my forte.
+                        <span style = "text-transform : uppercase; font-size : 18px;">My name is <span style = "font-size : 22px;">Daniel Ryan</span>, a Software Engineer</span>. Legally known as Silas Ilemobayo --- you should call me Daniel though. I am a professionally-trained devops-concentric web and mobile developer. I am also a forex trader with over three years experience; goes without saying that cryptocurrency trading is my forte.
     
                     </p>
            
@@ -180,10 +180,10 @@
                 </div>
                
                 <ul id = all-works>
-                    <li class = "graphic">
-                        <img src="{{ asset('images/work1.png')}}" alt="">
-                        <h4>sweet Cherry</h4>
-                        <p>Vidmate</p>
+                    <li class = "web">
+                        <img src="{{ asset('images/optymizas.jpg')}}" alt="">
+                        <a href="#nothing"><h4>www.optymizas.com</h4></a>
+                        <p>This is a website for students and teachers; pre-dominantly nigerians. It is a site where past-questions of the many exam bodies can be downloaded for a price of course.</p>
                     </li>
                     
                     <li class = "web">
@@ -212,7 +212,7 @@
             <div>
                 <h5>My Experience</h5>
                 <h1>SKILLS</h1>
-                <ul id = "skill-categories">
+                <ul id = "skill_categories">
                     <li>
                         <h2>Frontend Development</h2>
                         <ul class = "skills">
@@ -373,26 +373,6 @@
          
         </div>
 
-    <div id="testimonials">
-        <h1>Client Testimonial.</h1>
-
-        <ul>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-        </ul>
-      
-    </div>
-
     <div id="services">
 
         <h1>My Services</h1>
@@ -430,15 +410,26 @@
 
     </div>
 
-    <style>
-        *::placeholder {
-            text-align : center;
-        }
-        #contact form {
-            width : 400px;
-            box-shadow : inset 0px 0px 4px purple;
-        }
-    </style>
+    
+    <div id="testimonials">
+        <h1>Client Testimonial.</h1>
+
+        <ul>
+            <li>
+                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+            </li>
+            <li>
+                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+            </li>
+            <li>
+                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+            </li>
+            <li>
+                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+            </li>
+        </ul>
+      
+    </div>
 
     <div id="contact">
         <div>
