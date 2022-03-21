@@ -182,13 +182,13 @@
                 <ul id = all-works>
                     <li class = "web">
                         <img src="{{ asset('images/optymizas.jpg')}}" alt="">
-                        <a href="#nothing"><h4>www.optymizas.com</h4></a>
+                        <a href="http://protected-waters-45862.herokuapp.com"><h4>www.optymizas.com</h4></a>
                         <p>This is a website for students and teachers; pre-dominantly nigerians. It is a site where past-questions of the many exam bodies can be downloaded for a price of course.</p>
                     </li>
                     
                     <li class = "web">
                         <img src="{{ asset('images/work2.jpg')}}" alt="">
-                        <h4>sweet Cherry</h4>
+                        <a href="https://qudroid.herokuapp.com"><h4>www.qudroidsystems.com</h4></a>
                         <p>Vidmate</p>
                     </li>
 
