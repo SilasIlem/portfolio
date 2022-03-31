@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Inspiration-Regular";
+    src: url("Inspiration-Regular.ttf");
+}
 * {
     padding: 0px;
     margin: 0px;
@@ -151,10 +155,14 @@ body#dark #day-night .bi-lightbulb {
         width: 32px;
     }
 
+    #navbar-nav {
+        bottom: 4px;
+    }
+
     #navbar-nav ul {
         width: 96vw;
         opacity: 0.7;
-        height: 30px;
+        height: 46px;
         font-size: 1.2rem;
     }
 }
@@ -182,7 +190,7 @@ h1 {
 }
 
 .top {
-    min-height: 100vh;
+    min-height: 600px;
     width: 100vw;
     margin: 0px auto;
     background: var(--bg);
@@ -199,8 +207,8 @@ h1 {
     width: 140px;
     height: 200px;
     border-radius: none;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
 .top h3 {
@@ -249,12 +257,14 @@ h1 {
     font-size: 1.4rem;
     text-align: center;
     letter-spacing: 4px;
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 12px;
+    font-family: Inspiration-Regular;
 }
 
 #intro h1 {
     display: inline;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .top div button {
@@ -520,6 +530,17 @@ h1 {
     text-align: center;
 }
 
+#works > div > a > button {
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    color: var(--color);
+    background: none;
+    border: 1px solid var(--bg-pop);
+    margin-top: 50px;
+    cursor: pointer;
+}
+
 /********* SKILLS **********/
 
 #skills {
@@ -626,25 +647,159 @@ h1 {
     min-height: 100vh;
     color: var(--color);
     background: var(--bg);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#services > div {
+    min-width: 400px;
+    max-width: 400px;
 }
 
 #services ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 #services li {
-    margin: 16px auto;
+    margin: auto;
+    width: 100%;
+    position: relative;
 }
 
-#services li {
-    margin-bottom: 60px;
+#services li > div.desc {
+    width: 180px;
+    min-height: 30px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--bg-pop);
 }
+
+#services h3 {
+    display: inline;
+}
+
+#services li.left > div.desc::before {
+    content: "";
+    width: 2px;
+    background: var(--bg-pop);
+    position: absolute;
+    height: 100%;
+    left: calc(50% - 2px);
+    top: 0px;
+}
+
+#services li.right > div.desc::after {
+    content: "";
+    width: 2px;
+    background: var(--bg-pop);
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 50%;
+}
+
+#services .service__summary {
+    display: none;
+    transform: scaleY(0.8);
+    transition: all 0.2s linear;
+}
+
+#services li > div:hover .service__summary {
+    display: block;
+    transform: scaleY(1);
+}
+
 #services .left {
-    text-align: left;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #services .right {
-    text-align: right;
+    display: flex;
+    justify-content: start;
+}
+
+#services .service__summary button {
+    height: 26px;
+    text-align: center;
+    padding: 2px 4px;
+    background: none;
+    color: var(--color);
+    border: 1px solid var(--bg-pop);
+    margin: 4px;
+    border-radius: 6px;
+}
+
+#services .service__modal {
+    display: none;
+    height: 98vh;
+    width: 98vw;
+    position: fixed;
+    top: 0.5vh;
+    left: 0.5vw;
+    z-index: 999999;
+    background: rgba(145, 144, 144, 0.103);
+}
+
+#services .service__modal.show {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .service__content {
+    width: 400px;
+    min-height: 420px;
+    background: var(--bg);
+    border-radius: 6px;
+    position: relative;
+    padding: 8px;
+}
+
+#services .service__content .bi-x {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 1.5rem;
+}
+
+.service__content > ul {
+    text-align: left;
+}
+
+.service__content div {
+    display: flex;
+}
+
+.service__content div > i {
+    font-size: 0.8rem;
+    padding-top: 2px;
+    margin-right: 8px;
+}
+
+.service__content li > ul {
+    margin-left: 32px;
+}
+
+@media screen and (max-width: 450px) {
+    #services .left,
+    #services .right {
+        justify-content: center;
+    }
+
+    #services div::before,
+    #services div::after {
+        display: none;
+    }
+
+    #services .service__summary {
+        display: block;
+        transform: scaleY(1);
+    }
 }
 /********* CONTACT **********/
 

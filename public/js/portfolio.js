@@ -68,3 +68,23 @@ witch.addEventListener('click', () => {
         body.id = "light";
     }
 })
+
+const service = document.querySelectorAll('#services > div > ul > li');
+
+service.forEach(server => {
+    server.querySelector('button').addEventListener('click', () => {
+        server.querySelector( '.service__modal').classList.add('show');
+        const scrollHead = document.scrollY;
+        document.addEventListener('scroll', () => {
+            document.scrollY = scrollHead;
+        })
+    })
+})
+
+document.querySelectorAll('.bi-x').forEach(x => {
+        x.addEventListener('click', () => {
+        document.querySelectorAll('.service__modal').forEach(modal => {
+            modal.classList.remove('show');
+        })
+    })
+})

@@ -30,7 +30,7 @@
                 <li class="nav-item"><a class="nav-link" href="#"><i class = "bi bi-arrow-up"></i></a></li>
             </ul>
         </div>
-        <div class = "top">
+        <section class = "top">
             <button id = day-night><i class = "bi bi-lightbulb"></i><i class = "bi bi-moon"></i></button>
             <h3 id = "flag" class = "animated slideInDown"> <span id = "d">D</span> <span id = "r">R</span></h3>
             <div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
    
         <div id="about">
@@ -81,7 +81,7 @@
             <hr style = "height : 2px; margin : 0px 20px; width : 100%; background : var(--theme-color);">
 
             <div id = "about-summary">
-                <img src="images/2.jpg" alt="" id="about-img">
+                <img src="images/dan.jpg" alt="" id="about-img">
                 <div>
                     <h4>SKILLS SUMMARY</h4>
                     <ul>
@@ -144,7 +144,7 @@
             </div>
         </div>
 
-        <div id = about-bottom>
+        <section id = about-bottom>
             <ul>
                 <li>
                     <i class = "bi bi-award-fill"></i>
@@ -164,12 +164,13 @@
                     <p>Web Design is a similar process of creation with the intention of the pre presenting...</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div id="works">
+        <section id="works">
             <div>
                 <p>My Portfolio <span style = "font-family : fantasy;">Gangan</span></p>
                 <h1>RECENT WORKS</h1>
+                <h5>I love what I do, check out some of my latest works</h5>
                 <div>
                     <ul id = works-nav>
                         <li id = all><button>All</button></li>
@@ -189,29 +190,33 @@
                     <li class = "web">
                         <img src="{{ asset('images/work2.jpg')}}" alt="">
                         <a href="https://qudroid.herokuapp.com"><h4>www.qudroidsystems.com</h4></a>
-                        <p>Vidmate</p>
+                        <p>An online coding Academy.</p>
                     </li>
 
-                    <li class = "graphic">
-                        <img src="{{ asset('images/work1.png')}}" alt="">
-                        <h4>sweet Cherry</h4>
-                        <p>Vidmate</p>
+                    <li class = "web">
+                        <img src="{{ asset('images/img.png')}}" alt="">
+                        <a href = "https://heritage-sabo.herokuapp.com"><h4>www.heritage.com</h4></a>
+                        <p>This is a website that takes care of making enquiries and payments to exam bodies and universities in Nigeria.</p>
                     </li>
                     
-                    <li class = "mobile">
+                    <li class = "web">
                         <img src="{{ asset('images/work2.jpg')}}" alt="">
-                        <h4>sweet Cherry</h4>
-                        <p>Vidmate</p>
+                        <a href = "http://127.0.0.1:8000"><h4>www.DRink.com</h4></a>
+                        <p>Daniel Ryan's blog</p>
                     </li>
                 </ul>
+
+                <a href="#contact"><button>START A PROJECT</button></a>
             </div>
            
-        </div>
+        </section>
 
-        <div id="skills">
+        <section id="skills">
             <div>
                 <h5>My Experience</h5>
                 <h1>SKILLS</h1>
+
+                <h5>I've got everything you need to launch and grow your business</h5>
                 <ul id = "skill_categories">
                     <li>
                         <h2>Frontend Development</h2>
@@ -357,62 +362,465 @@
                             <li>
                                 Python
                             </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>
+                                Rust
+                            </li>
+                            <li>R</li>
+                            <li>Php</li>
+                            <li>Laravel</li>
                         </ul>
 
                     </li>
-                    <li>Devops Expertise</li>
-                    <li>Full-stack Web Development</li>
+                    <li>
+                        <h2>Devops Expertise</h2>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Full-stack Web Development</h2>
+                        <ul class = "skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Flask</li>
+                            <li>Django</li>
+                            <li>MERN Stack</li>
+                            <li>MySQL</li>
+                            <li>Github</li>
+                        </ul>
+                    </li>
                     <li>Code Debugging</li>
                     <li>100 wpm (words per minute) Typing Speed (Average)</li>
                     <li>UI/UX Design</li>
                     <li>Machine-Learning Expertise</li>
                     <li>Cloud Web development</li>
-                    <li>Mobile Application Development</li>
+                    <li>
+                        <h2>Mobile Application Development</h2>
+                        <ul class = "skills">
+                            <li>Android Studio Usage</li>
+                            <li>Android Basics</li>
+                            <li>Swift for IOS</li>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>Flutter</li>
+                            <li>React Native</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
          
-        </div>
+        </section>
 
-    <div id="services">
-
-        <h1>My Services</h1>
+    <section id="services">
+        <div>
+        <p>My Services</p>
+        <h1>WHAT I OFFER</h1>
 
         <ul>
             <li class = left>
-                <h3>Web Design</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
+                
+                <div class = "desc">
+                    <h3>Web Design</h3>
+                    <div class = "service__summary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
+                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="service__modal">
+                    <div class="service__content">
+                        <i class = "bi bi-x"></i>
+                        <h2>Web Design</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frontend</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Backend</h4>
+                                </div>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>ASP.net</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Devops</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frameworks</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+           
+           
             </li>
             <li class = right>
-                <h3>Tutorials on Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, asperiores.</p>
+
+                <div class = "desc">
+                    <h3>Tutorials on Web Design</h3>
+                    <div class = "service__summary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
+                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="service__modal">
+                    <div class="service__content">
+                        <i class = "bi bi-x"></i>
+                        <h2>Tutorials on Web Design</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frontend</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Backend</h4>
+                                </div>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>ASP.net</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Devops</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frameworks</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+           
             </li>
             <li class = left>
-                <h3>Tutorials on the Sciences</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, sint.</p>
+                
+                <div class = "desc">
+                    <h3>Graphic Design</h3>
+                    <div class = "service__summary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
+                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="service__modal">
+                    <div class="service__content">
+                        <i class = "bi bi-x"></i>
+                        <h2>Graphic Design</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Logo Design</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Banner Design</h4>
+                                </div>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>ASP.net</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Flyer Design</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frameworks</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+           
             </li>
             <li class = right>
-                <h3>Tutorials on English Fluency.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eligendi!</p>
+
+                <div class = "desc">
+                    <h3>Search Engine Optimization</h3>
+                    <div class = "service__summary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="service__modal">
+                    <div class="service__content">
+                        <i class = "bi bi-x"></i>
+                        <h2>Search Engine Optimization</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frontend</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Backend</h4>
+                                </div>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>ASP.net</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Devops</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frameworks</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+           
             </li>
             <li class = left>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, sit?</p>
+                
+                <div class = "desc">
+                    <h3>Video Editing</h3>
+                    <div class = "service__summary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
+                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="service__modal">
+                    <div class="service__content">
+                        <i class = "bi bi-x"></i>
+                        <h2>Video Editing</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frontend</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Backend</h4>
+                                </div>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>ASP.net</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Devops</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frameworks</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+           
             </li>
             <li class = right>
-                <h3>Search Engine Optimization</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates.</p>
+
+                <div class = "desc">
+                    <h3>Tutorials on English Fluency</h3>
+                    <div class = "service__summary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="service__modal">
+                    <div class="service__content">
+                        <i class = "bi bi-x"></i>
+                        <h2>Tutorials on English Fluency</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frontend</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Backend</h4>
+                                </div>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>ASP.net</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Devops</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class = "bi bi-disc"></i>
+                                    <h4>Frameworks</h4>
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+           
             </li>
-            <li class = left>
-                <h3>Video Editing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cumque.</p>
-            </li>
+
         </ul>
 
-    </div>
+        </div>
+    </section>
 
     
-    <div id="testimonials">
-        <h1>Client Testimonial.</h1>
+    <section id="testimonials">
+        <h1>My Clients' Testimonial.</h1>
+        <h5>I am honored to have partnered up with these clients</h5>
 
         <ul>
             <li>
@@ -429,9 +837,9 @@
             </li>
         </ul>
       
-    </div>
+    </section>
 
-    <div id="contact">
+    <section id="contact">
         <div>
 
         <div>
@@ -472,8 +880,14 @@
             <textarea placeholder = "write a Message"></textarea>
             <button type="submit">Send</button>
         </form>
+        
+        <form action="">
+            <p>Get Notified</p>
+            <input type="email" placeholder = "Email Address">
+            <button type="submit">SUBSCRIBE</button>
+        </form>
     </div>
-    </div>
+    </section>
 
     <footer style = "text-align : center;">
         Copyright &copy; 2022 | All rights reserved 
