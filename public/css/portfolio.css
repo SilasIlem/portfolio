@@ -883,6 +883,7 @@ h1 {
     justify-content: space-around;
     height: 500px;
     flex-direction: column;
+    box-shadow: inset 0px 0px 4px gray;
 }
 
 #contact form > *:not(p, button) {
@@ -901,6 +902,9 @@ h1 {
     text-align: center;
 }
 
-#contact form {
-    box-shadow: inset 0px 0px 4px gray;
+#contact form button {
+    padding : .4rem 1rem;
+    border-radius : 4px;
+    background : black;
+    color : white;
 }
