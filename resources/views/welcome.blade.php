@@ -11,6 +11,7 @@
         
         <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-icons/bootstrap-icons.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
 
         <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
 
@@ -69,7 +70,7 @@
                 </div>
 
                 <div style = "display : flex; justify-content : center; width : 100%;">
-                    <img style = "z-index : 1;" src="{{ asset('images/dan2.jpg') }}" alt="" id = developer>
+                    <img style = "z-index : 1;" src="{{ asset('images/1092360.jpg') }}" alt="" id = 'developer'>
                 </div>
             </div>
 
@@ -113,7 +114,7 @@
                         <li>
                             <i class="bi bi-gem"></i>
                             <h2>Completed</h2>
-                            <p>27+ Websites</p>
+                            <p>5+ Websites</p>
                         </li>
                         <li>
                             <i class="bi bi-envelope"></i>
@@ -137,7 +138,7 @@
     
                     </p>
            
-                    <button>Contact Me</button>
+                    <a href = "#contact"><button>Contact Me</button></a>
                 </div>
                 
 
@@ -149,19 +150,19 @@
                 <li>
                     <i class = "bi bi-award-fill"></i>
                     <h2>Brand Identity</h2>
-                    <p>Web Design is a similar process of creation with the intention of the pre presenting...</p>
+                    <p>Web Design is me and I am mostly a reflection of it...</p>
                 </li>
                
                 <li>
                     <i class = "bi bi-puzzle"></i>
                     <h2>Cognitive Design</h2>
-                    <p>Web Design is a similar process of creation with the intention of the pre presenting...</p>
+                    <p>I am very confident in just how much of a designer I tend to be, for the right price of course.</p>
                 </li>
                 
                 <li>
                     <i class = "bi bi-laptop-fill"></i>
-                    <h2>Web development</h2>
-                    <p>Web Design is a similar process of creation with the intention of the pre presenting...</p>
+                    <h2>Web & Mobile development</h2>
+                    <p>Website design and mobile application design are just my thing.</p>
                 </li>
             </ul>
         </section>
@@ -184,7 +185,13 @@
                     <li class = "web">
                         <img src="{{ asset('images/optymizas.jpg')}}" alt="">
                         <a href="http://protected-waters-45862.herokuapp.com"><h4>www.optymizas.com</h4></a>
-                        <p>This is a website for students and teachers; pre-dominantly nigerians. It is a site where past-questions of the many exam bodies can be downloaded for a price of course.</p>
+                        <p>This is a website for students and teachers; pre-dominantly nigerians. It is a site where past-questions of the many exam bodies can be downloaded for a price.</p>
+                    </li>
+                    
+                    <li class = "web">
+                        <img src="{{ asset('images/IMG-20220512-WA0005.jpg')}}" alt="">
+                        <a href="http://shmsa.herokuapp.com/"><h4>www.shmsa.com</h4></a>
+                        <p>This is the Sacred Heart Minor Seminary website.</p>
                     </li>
                     
                     <li class = "web">
@@ -338,9 +345,44 @@
                             </li>
                         </ul>
                     </li>
+
                     <li>
-                        <h2>Web-Design Coaching</h2>
-                        <ul class = skills>
+                        <h2>Mobile Application Development</h2>
+                        <ul class = "skills">
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Android Basics</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Swift (for ios)</span></p>
+                                <progress value = "90" max = 100></progress>                                
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Java</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Kotlin</span></p>
+                                <progress value = "90" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Flutter</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>React Native</span></p>
+                                <progress value = "80" max = 100></progress>
+                            </li>
+                            <li>
+                                <p><i class = "bi bi-disc"></i><span>Android Studio Usage</span></p>
+                                <progress value = "100" max = 100></progress>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h2>Web-Design Coaching on</h2>
+                        <ul class = "listing">
                             <li>
                                 HTML
                             </li>
@@ -377,545 +419,344 @@
                         </ul>
 
                     </li>
+
                     <li>
                         <h2>Devops Expertise</h2>
-                        <ul>
-                            <li></li>
+                        <ul class = "listing">
+                            <li>Jenkins</li>
+                            <li>Docker</li>
+                            <li>Terraform</li>
+                            <li>Kubernetes</li>
+                            <li>Ansible</li>
+                            <li>Vagrant</li>
                         </ul>
                     </li>
+
                     <li>
-                        <h2>Full-stack Web Development</h2>
-                        <ul class = "skills">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>PHP</li>
-                            <li>Laravel</li>
-                            <li>Flask</li>
-                            <li>Django</li>
-                            <li>MERN Stack</li>
-                            <li>MySQL</li>
-                            <li>Github</li>
+                        <h2>Misc</h2>
+                        <ul class = "listing">
+                            <li>Code Debugging</li>
+                            <li>100 wpm (words per minute) Typing Speed (Average)</li>
+                            <li>UI/UX Design</li>
+                            <li>Machine-Learning Expertise</li>
+                            <li>Cloud Web development</li>
                         </ul>
+
                     </li>
-                    <li>Code Debugging</li>
-                    <li>100 wpm (words per minute) Typing Speed (Average)</li>
-                    <li>UI/UX Design</li>
-                    <li>Machine-Learning Expertise</li>
-                    <li>Cloud Web development</li>
-                    <li>
-                        <h2>Mobile Application Development</h2>
-                        <ul class = "skills">
-                            <li>Android Studio Usage</li>
-                            <li>Android Basics</li>
-                            <li>Swift for IOS</li>
-                            <li>Java</li>
-                            <li>Kotlin</li>
-                            <li>Flutter</li>
-                            <li>React Native</li>
-                        </ul>
-                    </li>
+                    
                 </ul>
             </div>
          
         </section>
 
-    <section id="services">
-        <div>
-        <p>My Services</p>
-        <h1>WHAT I OFFER</h1>
+        <section id="services">
+            <div>
+            <p>My Services</p>
+            <h1>WHAT I OFFER</h1>
 
-        <ul>
-            <li class = left>
-                
-                <div class = "desc">
-                    <h3>Web Design</h3>
-                    <div class = "service__summary">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
-                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
-                    </div>
-                </div>
-                <div class="service__modal">
-                    <div class="service__content">
-                        <i class = "bi bi-x"></i>
-                        <h2>Web Design</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frontend</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Backend</h4>
-                                </div>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>Laravel</li>
-                                    <li>ASP.net</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Devops</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frameworks</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-           
-           
-            </li>
-            <li class = right>
-
-                <div class = "desc">
-                    <h3>Tutorials on Web Design</h3>
-                    <div class = "service__summary">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
-                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
-                    </div>
-                </div>
-                <div class="service__modal">
-                    <div class="service__content">
-                        <i class = "bi bi-x"></i>
-                        <h2>Tutorials on Web Design</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frontend</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Backend</h4>
-                                </div>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>Laravel</li>
-                                    <li>ASP.net</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Devops</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frameworks</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-           
-            </li>
-            <li class = left>
-                
-                <div class = "desc">
-                    <h3>Graphic Design</h3>
-                    <div class = "service__summary">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
-                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
-                    </div>
-                </div>
-                <div class="service__modal">
-                    <div class="service__content">
-                        <i class = "bi bi-x"></i>
-                        <h2>Graphic Design</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Logo Design</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Banner Design</h4>
-                                </div>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>Laravel</li>
-                                    <li>ASP.net</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Flyer Design</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frameworks</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-           
-            </li>
-            <li class = right>
-
-                <div class = "desc">
-                    <h3>Search Engine Optimization</h3>
-                    <div class = "service__summary">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
-                        <button>Learn More</button>
-                    </div>
-                </div>
-                <div class="service__modal">
-                    <div class="service__content">
-                        <i class = "bi bi-x"></i>
-                        <h2>Search Engine Optimization</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frontend</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Backend</h4>
-                                </div>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>Laravel</li>
-                                    <li>ASP.net</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Devops</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frameworks</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-           
-            </li>
-            <li class = left>
-                
-                <div class = "desc">
-                    <h3>Video Editing</h3>
-                    <div class = "service__summary">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
-                        <button>Learn More <i class = "bi bi-arrow-right"></i></button>
-                    </div>
-                </div>
-                <div class="service__modal">
-                    <div class="service__content">
-                        <i class = "bi bi-x"></i>
-                        <h2>Video Editing</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frontend</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Backend</h4>
-                                </div>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>Laravel</li>
-                                    <li>ASP.net</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Devops</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frameworks</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-           
-            </li>
-            <li class = right>
-
-                <div class = "desc">
-                    <h3>Tutorials on English Fluency</h3>
-                    <div class = "service__summary">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, error.</p>
-                        <button>Learn More</button>
-                    </div>
-                </div>
-                <div class="service__modal">
-                    <div class="service__content">
-                        <i class = "bi bi-x"></i>
-                        <h2>Tutorials on English Fluency</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frontend</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Backend</h4>
-                                </div>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>Laravel</li>
-                                    <li>ASP.net</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Devops</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div>
-                                    <i class = "bi bi-disc"></i>
-                                    <h4>Frameworks</h4>
-                                </div>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-           
-            </li>
-
-        </ul>
-
-        </div>
-    </section>
-
-    
-    <section id="testimonials">
-        <h1>My Clients' Testimonial.</h1>
-        <h5>I am honored to have partnered up with these clients</h5>
-
-        <ul>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-            <li>
-                <p>"Far far away, behind the word mountains, ar from the coutnries Vokalia and Consonantia, there live the blind texts.Separted they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-            </li>
-        </ul>
-      
-    </section>
-
-    <section id="contact">
-        <div>
-
-        <div>
-
-            <h1>Get in Touch</h1>
-            <h3>My Contact Details</h3>
             <ul>
-                <li>
-                    <i class = "bi bi-envelope-fill"></i>
-                    <p>Email Address</p>
-                    <a href = "mailto:danryan0246@gmail.com">danryan0246@gmail.com</a>
+                <li class = left>
+                    
+                    <div class = "desc">
+                        <h3>Web Design</h3>
+                        <div class = "service__summary">
+                            <button>Learn More <i class = "bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="service__modal">
+                        <div class="service__content">
+                            <i class = "bi bi-x"></i>
+                            <h2>Web Design</h2>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Frontend</h4>
+                                    </div>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Backend</h4>
+                                    </div>
+                                    <ul>
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>ASP.net</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Devops</h4>
+                                    </div>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Frameworks</h4>
+                                    </div>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+            
+            
                 </li>
-                <li>
-                    <i class = "bi bi-telephone-fill"></i>
-                    <p>Phone Number</p>
-                    <a href = "tel:+2347042717677">+2347042717677</a>
+                <li class = right>
+
+                    <div class = "desc">
+                        <h3>Tutorials on Web Design</h3>
+                        <div class = "service__summary">
+                            <button>Learn More <i class = "bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="service__modal">
+                        <div class="service__content">
+                            <i class = "bi bi-x"></i>
+                            <h2>Tutorials on Web Design</h2>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Frontend</h4>
+                                    </div>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Backend</h4>
+                                    </div>
+                                    <ul>
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>ASP.net</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Devops</h4>
+                                    </div>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Frameworks</h4>
+                                    </div>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+            
                 </li>
-                <li>
-                    <i class = "bi bi-whatsapp"></i>
-                    <p>WhatsApp</p>
-                    <p>+2348137457229</p>
+                <li class = left>
+                    
+                    <div class = "desc">
+                        <h3>Graphic Design</h3>
+                        <div class = "service__summary">
+                            <button>Learn More <i class = "bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="service__modal">
+                        <div class="service__content">
+                            <i class = "bi bi-x"></i>
+                            <h2>Graphic Design</h2>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Logo Design</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Banner Design</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Flyer Design</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class = "bi bi-disc"></i>
+                                        <h4>Frameworks</h4>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+            
                 </li>
-                <li>
-                    <i class = "bi bi-facebook"></i>
-                    <p>Facebook</p>
-                    <a href="www.facebook.com/danryan">Daniel Ryan</a>
+                <li class = right>
+
+                    <div class = "desc">
+                        <h3>Search Engine Optimization</h3>
+                        <div class = "service__summary">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div class="service__modal">
+                        <div class="service__content">
+                            <i class = "bi bi-x"></i>
+                            <h2>Search Engine Optimization</h2>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>Analytics</li>
+                                        <li>Keyword Research</li>
+                                        <li>Links</li>
+                                        <li>Local SEO</li>
+                                        <li>Mobile SEO</li>
+                                        <li>On-page SEO</li>
+                                        <li>Rank Checking</li>
+                                        <li>Site Speed</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
                 </li>
+                <li class = left>
+                    
+                    <div class = "desc">
+                        <h3>Video Editing</h3>
+                    
+                    </div>
+            
+                </li>
+                <li class = right>
+
+                    <div class = "desc">
+                        <h3>Tutorials on English Fluency</h3>
+                    </div>
+            
+                </li>
+
             </ul>
 
-            <p><span style = "font-weight : bolder;">Address</span> : No 12 Esso, Opposite AUD schools, Ondo City, Ondo State.</p>
-        </div>
+            </div>
 
-        <form action="">
-            <p>Write me your project...</p>
-            <input type="text" placeholder = "Name">
-            <input type="email" placeholder = "Email">
-            <input type="tel" placeholder = "Phone No">
-            <textarea placeholder = "write a Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+            <form action="{{ route('subscribe') }}" method = "POST">
+                @csrf
+                <p>Get Notified</p>
+                <input type="email" name = "email" placeholder = "Email Address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+
+        </section>
         
-        <form action="">
-            <p>Get Notified</p>
-            <input type="email" placeholder = "Email Address">
-            <button type="submit">SUBSCRIBE</button>
-        </form>
-    </div>
-    </section>
+        
+        <section id="testimonials">
+            <h1>My Clients' Testimonial.</h1>
+            <h5>I am honored to have partnered up with these clients</h5>
 
-    <footer style = "text-align : center;">
-        Copyright &copy; 2022 | All rights reserved 
-    </footer>
-<script src="js/vendor/jquery.min.js"></script>
-<script src="js/vendor/jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js+jquery.easing.1.3.js.pagespeed.jc.uxxkex28sQ.js"></script><script>eval(mod_pagespeed_s9oGiJZxTb);</script>
-<script>eval(mod_pagespeed_j_Mw8blyhv);</script>
-<script>eval(mod_pagespeed_bFkBxCYQ3v);</script>
-<script>eval(mod_pagespeed__f3Ii7ajmX);</script>
-<script src="js/vendor,_jquery.stellar.min.js+vendor,_jquery.waypoints.min.js+custom.js.pagespeed.jc.pnQHqVD1q2.js"></script><script>eval(mod_pagespeed_9ZERlAUSP9);</script>
-<script>eval(mod_pagespeed_QZ_dFqdF1I);</script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script>eval(mod_pagespeed_SQ1QUsEwMs);</script>
+            <ul class = "owl-carousel owl-carousel1">
+                <li>
+                    <p>"Mr. Daniel Ryan is such a brilliant mind to work with."</p>
+                    <small>Timi</small>
+                </li>
+                <li>
+                    <p>"Daniel Ryan is really fun, and he makes the whole ordeal of working with a person seem fun as well."</p>
+                    <small>Silas</small>
+                </li>
+                <li>
+                    <p>"Mr. Daniel Ryan is simple, but full of wonders."</p>
+                    <small>Ire</small>
+                </li>
+            </ul>
+        
+        </section>
 
+        <section id="contact">
+            <div>
 
+            <div>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-    		window.dataLayer = window.dataLayer || [];
-    		function gtag(){dataLayer.push(arguments);}
-    		gtag('js', new Date());
+                <h1>Get in Touch</h1>
+                <h3>My Contact Details</h3>
+                <ul>
+                    <li>
+                        <i class = "bi bi-envelope-fill"></i>
+                        <p>Email Address</p>
+                        <a href = "mailto:danryan0246@gmail.com">danryan0246@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class = "bi bi-telephone-fill"></i>
+                        <p>Phone Number</p>
+                        <a href = "tel:+2347042717677">+2347042717677</a>
+                    </li>
+                    <li>
+                        <i class = "bi bi-whatsapp"></i>
+                        <p>WhatsApp</p>
+                        <p>+2348137457229</p>
+                    </li>
+                    <li>
+                        <i class = "bi bi-facebook"></i>
+                        <p>Facebook</p>
+                        <a href="www.facebook.com/danryan">Daniel Ryan</a>
+                    </li>
+                </ul>
 
-    		gtag('config', 'UA-23581568-13');
-    	</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d48bceb485ec4e8","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
-<script src = "{{ asset('js/portfolio.js') }}"></script>
-</body>
-</html>
+                <p><span style = "font-weight : bolder;">Address</span> : No 12 Esso, Opposite AUD schools, Ondo City, Ondo State.</p>
+            </div>
+
+            <form action="{{ route('project') }}" method = "POST">
+                <p>Write me your project...</p>
+                <input type="text" placeholder = "Name" name = "name">
+                <input type="email" placeholder = "Email" name = "email">
+                <input type="tel" placeholder = "Phone No" name = "phone">
+                <textarea placeholder = "write a Message" name = "content"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            
+        </div>
+        </section>
+
+        <footer style = "text-align : center; padding-bottom : 80px; ">
+            Copyright &copy; 2022 | All rights reserved 
+        </footer>
+
+        <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+        <script src = "{{asset('js/owl.carousel.min.js') }}"></script>
+        <script src = "{{ asset('js/portfolio.js') }}"></script>
     </body>
 </html>

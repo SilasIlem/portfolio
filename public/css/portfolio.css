@@ -13,6 +13,7 @@
 
 :root {
     --theme-color: rgb(121, 51, 151);
+    --theme-color: rgb(65, 141, 159);
     --theme-color-light: rgb(159, 46, 207);
 }
 
@@ -91,8 +92,8 @@ body#dark #day-night .bi-lightbulb {
 #navbar-nav ul {
     display: flex;
     background: var(--bg);
-    color: orangered;
-    border: 1px solid orangered;
+    color: var(--theme-color);
+    border: 1px solid var(--theme-color);
     border-radius: 6px;
     height: 40px;
     opacity: 0.6;
@@ -205,7 +206,7 @@ h1 {
 
 #developer {
     width: 140px;
-    height: 200px;
+    height: 260px;
     border-radius: none;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -606,6 +607,14 @@ h1 {
     margin: 8px 0px;
 }
 
+.listing {
+    text-align: left;
+    margin : 6px;
+    gap : .5rem;
+    display : flex;
+    flex-direction: column;
+}
+
 /********* TESTIMONIALS **********/
 #testimonials h1,
 #services h1,
@@ -615,25 +624,27 @@ h1 {
 }
 
 #testimonials {
-    margin: 40px 20px;
+    margin: 40px auto;
     padding: 10px;
+    width : 70vw;
     background-image: url("../images/developer.jpg')");
     background-attachment: fixed;
     background-size: cover;
     color: var(--theme-color);
 }
 
+#testimonials h5 {
+    text-align: center;
+}
+
 #testimonials ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     list-style: none;
-    align-items: center;
 }
 
 #testimonials li {
     width: 300px;
     height: 320px;
+    border-radius : 4px;
     background: rgba(255, 255, 255, 0.788);
     box-shadow: 0px 0px 8px #6b7280;
     margin: 8px 16px;
@@ -645,16 +656,49 @@ h1 {
 #services {
     padding: 16px 40px;
     min-height: 100vh;
+    padding-bottom : 350px;
     color: var(--color);
     background: var(--bg);
     display: flex;
     justify-content: center;
+    position : relative;
     text-align: center;
+}
+
+#services > form {
+    position : absolute;
+    bottom : 8px;
+    width : 300px;
+    display : flex;
+    flex-direction : column;
+    gap : 1.2rem;
+    align-items : center;
+    padding : 12px;
+}
+
+#services > form > input {
+    width : 300px;
+    height : 48px;
+    border-radius : 4px;
+}
+
+#services > form > button {
+    padding : .6rem 1rem;
+    width : max-content;
+    background : white;
+    cursor : pointer;
+    transition : all .4s linear;
+    color : black;
 }
 
 #services > div {
     min-width: 400px;
     max-width: 400px;
+}
+
+#services > form > button:hover {
+    background : var(--bg);
+    color : white;
 }
 
 #services ul {
@@ -837,7 +881,7 @@ h1 {
     width: 300px;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
+    height: 500px;
     flex-direction: column;
 }
 
@@ -858,5 +902,5 @@ h1 {
 }
 
 #contact form {
-    box-shadow: inset 0px 0px 4px purple;
+    box-shadow: inset 0px 0px 4px gray;
 }

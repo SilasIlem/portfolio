@@ -58,6 +58,19 @@ graphic.addEventListener('click', () => {
     });
 })
 
+$('.owl-carousel1').owlCarousel({
+    nav : true,
+    loop : true,
+    responsive : {
+        600 : {
+            items : 1
+        },
+        1000 : {
+            items : 3
+        }
+    }
+});
+
 const witch = document.getElementById('day-night');
 const body = document.querySelector('body');
 
@@ -72,7 +85,7 @@ witch.addEventListener('click', () => {
 const service = document.querySelectorAll('#services > div > ul > li');
 
 service.forEach(server => {
-    server.querySelector('button').addEventListener('click', () => {
+    server.querySelector('button')?.addEventListener('click', () => {
         server.querySelector( '.service__modal').classList.add('show');
         const scrollHead = document.scrollY;
         document.addEventListener('scroll', () => {
