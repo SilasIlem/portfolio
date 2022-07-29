@@ -69,7 +69,7 @@
                     <button style = "z-index : 99"><a href="#works">View my Works</a></button>
                 </div>
 
-                <div style = "display : flex; justify-content : center; width : 100%;">
+                <div style = "display : flex; justify-content : center; width : 100%; height : max-content">
                     <img style = "z-index : 1;" src="{{ asset('images/1092360.jpg') }}" alt="" id = 'developer'>
                 </div>
             </div>
